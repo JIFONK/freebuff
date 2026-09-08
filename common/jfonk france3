@@ -1,0 +1,75 @@
+/**
+ * Internationalization (i18n) utilities for Freebuff
+ *
+ * This module provides a centralized way to manage language and locale settings
+ * across the Freebuff monorepo.
+ *
+ * Supported languages:
+ * - English (en)
+ * - French (fr)
+ * - Chinese Simplified (zh)
+ */
+
+export type SupportedLanguage = 'en' | 'fr' | 'zh'
+
+const DEFAULT_LANGUAGE: SupportedLanguage = 'en'
+const SUPPORTED_LANGUAGES: readonly SupportedLanguage[] = ['en', 'fr', 'zh']
+
+/**
+ * Get the current language from localStorage or browser preferences
+ */
+export function getCurrentLanguage(): SupportedLanguage {
+  if (typeof window === 'undefined') return DEFAULT_LANGUAGE
+
+  const stored = localStorage.getItem('language')
+  if (stored && isValidLanguage(stored)) {
+    return stored as SupportedLanguage
+  }
+
+  const browserLang = navigator.language.split('-')[0]
+  if (isValidLanguage(browserLang)) {
+    return browserLang as SupportedLanguage
+  }
+
+  return DEFAULT_LANGUAGE
+}
+
+/**
+ * Set the current language and persist to localStorage
+ */
+export function setLanguage(lang: SupportedLanguage): void {
+  if (!isValidLanguage(lang)) {
+    console.warn(`Invalid language: ${lang}. Falling back to ${DEFAULT_LANGUAGE}`)
+    return
+  }
+  localStorage.setItem('language', lang)
+  if (typeof window !== 'undefined') {
+    document.documentElement.lang = lang
+  }
+}
+
+/**
+ * Check if a language code is valid
+ */
+export function isValidLanguage(lang: string): boolean {
+  return SUPPORTED_LANGUAGES.includes(lang as SupportedLanguage)
+}
+
+/**
+ * Get all supported languages
+ */
+export function getSupportedLanguages(): readonly SupportedLanguage[] {
+  return SUPPORTED_LANGUAGES
+}
+
+/**
+ * Get the language name for display
+ */
+export function getLanguageName(lang: SupportedLanguage): string {
+  const names: Record<SupportedLanguage, string> = {
+    en: 'English',
+    fr: 'Français',
+    zh: '中文',
+  }
+  return names[lang] || lang
+}
