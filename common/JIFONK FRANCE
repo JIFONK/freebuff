@@ -1,0 +1,127 @@
+{
+  "common": {
+    "language": "Français",
+    "welcome": "Bienvenue",
+    "loading": "Chargement...",
+    "error": "Erreur",
+    "success": "Succès",
+    "cancel": "Annuler",
+    "submit": "Soumettre",
+    "save": "Enregistrer",
+    "delete": "Supprimer",
+    "edit": "Modifier",
+    "close": "Fermer",
+    "back": "Retour",
+    "next": "Suivant",
+    "previous": "Précédent",
+    "retry": "Réessayer",
+    "logout": "Déconnexion"
+  },
+  "auth": {
+    "login": "Connexion",
+    "signup": "S'inscrire",
+    "email": "E-mail",
+    "password": "Mot de passe",
+    "rememberMe": "Se souvenir de moi",
+    "forgotPassword": "Mot de passe oublié?",
+    "loginSuccess": "Connexion réussie",
+    "loginError": "Erreur de connexion",
+    "signupSuccess": "Inscription réussie",
+    "signupError": "Erreur lors de l'inscription"
+  },
+  "nav": {
+    "home": "Accueil",
+    "about": "À propos",
+    "products": "Produits",
+    "documentation": "Documentation",
+    "support": "Assistance",
+    "github": "GitHub",
+    "discord": "Discord"
+  },
+  "hero": {
+    "title": "Freebuff",
+    "subtitle": "L'agent de codage gratuit. Aucun abonnement. Aucune configuration. Démarrage en quelques secondes.",
+    "cta": "Commencer maintenant",
+    "description": "Un agent de codage IA qui s'exécute dans votre terminal — décrivez ce que vous voulez, et Freebuff modifie votre code."
+  },
+  "products": {
+    "desktop": {
+      "name": "Freebuff Desktop",
+      "description": "Exécutez des agents en parallèle localement",
+      "cta": "Télécharger"
+    },
+    "cli": {
+      "name": "Freebuff CLI",
+      "description": "Codez à partir de votre terminal",
+      "cta": "Installer la CLI"
+    },
+    "web": {
+      "name": "Freebuff Web",
+      "description": "Construisez et déployez des applications full-stack",
+      "cta": "Créer une application"
+    },
+    "cloud": {
+      "name": "Freebuff Cloud",
+      "description": "Exécutez des agents sur n'importe quel dépôt GitHub",
+      "cta": "Connecter un dépôt"
+    },
+    "chat": {
+      "name": "Freebuff Chat",
+      "description": "Recherchez et réfléchissez avec l'IA",
+      "cta": "Commencer une conversation"
+    }
+  },
+  "models": {
+    "title": "Modèles disponibles",
+    "description": "Freebuff inclut un catalogue de modèles sélectionnés",
+    "glm": "GLM 5.3 Flash",
+    "glmDesc": "Le modèle par défaut partout; raisonnement profond, sans limite",
+    "deepseek": "DeepSeek V4 Flash",
+    "deepseekDesc": "Codage rapide et utilisation des outils, sans limite",
+    "gpt": "GPT-5.6 Luna",
+    "gptDesc": "Performances solides dans tous les domaines avec images natives",
+    "mimo": "MiMo 2.5",
+    "mimoDesc": "Performances équilibrées avec support d'image"
+  },
+  "features": {
+    "title": "Comment fonctionne Freebuff",
+    "context": "Contexte du code",
+    "contextDesc": "Les agents de recherche de fichiers mappent les parties pertinentes d'un projet avant l'édition",
+    "implementation": "Implémentation et révision",
+    "implementationDesc": "Les agents peuvent diviser le travail, faire des changements, exécuter des commandes et inspecter le résultat",
+    "research": "Recherche et utilisation du navigateur",
+    "researchDesc": "Les agents peuvent enquêter sur la documentation et tester les applications dans un vrai navigateur",
+    "parallel": "Travail local en parallèle",
+    "parallelDesc": "Desktop isole les agents concurrents dans des espaces de travail séparés",
+    "hosted": "Environnements hébergés",
+    "hostedDesc": "Web et Cloud fournissent des sandbox, des aperçus, des terminaux et des flux de déploiement"
+  },
+  "faq": {
+    "title": "Questions fréquemment posées",
+    "dataUsage": "Mes données sont-elles utilisées pour entraîner l'IA?",
+    "dataUsageAnswer": "Seulement lorsqu'un modèle ou une fonctionnalité indique que les données peuvent être utilisées pour l'entraînement de l'IA. Freebuff ou le fournisseur peut conserver les soumissions pour développer, entraîner, tester, évaluer et affiner la technologie d'IA.",
+    "dataStorage": "Comment mes données sont-elles utilisées et stockées?",
+    "dataStorageAnswer": "Nous utilisons les invites, les messages, les traces d'agent, le code, les fichiers et les données du dépôt pour fournir Freebuff. Nous pouvons analyser les invites et les messages pour personnaliser les annonces. Nous ne stockons pas les données à long terme au-delà de ce qui est nécessaire pour le service."
+  },
+  "privacy": {
+    "title": "Politique de confidentialité",
+    "viewFull": "Voir la politique complète"
+  },
+  "footer": {
+    "copyright": "© 2024 Codebuff AI. Tous droits réservés.",
+    "license": "Licence Apache 2.0",
+    "links": {
+      "website": "Site web",
+      "github": "GitHub",
+      "discord": "Discord",
+      "privacy": "Politique de confidentialité",
+      "license": "Licence"
+    }
+  },
+  "errors": {
+    "notFound": "Page non trouvée",
+    "serverError": "Erreur serveur",
+    "tryAgain": "Réessayer",
+    "goHome": "Aller à l'accueil"
+  }
+}
